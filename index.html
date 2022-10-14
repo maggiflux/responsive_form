@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c8b3910b3f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/resourses/envelope-solid.svg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>ResponsiveForm x Maggi</title>
 </head>
 <body>
     <main class="container">
        <figure class="main__figure">
-            <img src="./images/Email campaign_Flatline.svg" class="figure" alt="ilustracion muchacha con celular">
+            <img src="/resourses/Email campaign_Flatline.svg" class="figure" alt="ilustracion muchacha con celular">
        </figure>
        <section class="main__contact">
         <h1 class="title">Nuestro Newsletter</h1>
-        <h2 class="subtitle">Subscribete y podrás mantenerte al tanto de nuestras actividades semanales, cursos y el box mensual con recursos gratuitos.</h2>
-        <form class="main__form">
-            <input type="text" class="input__form" placeholder="nombre">
-            <input type="text" class="input__form" placeholder="apellido">
-            <input type="text" class="input__form" placeholder="teléfono">
-            <input type="email" class="input__form" placeholder="email">
-            <input type="submit" class="input__form btn-send" value="Enviar">
+        <h2>Subscribete y podrás mantenerte al tanto de nuestras actividades semanales, cursos y el box mensual con recursos gratuitos.</h2>
+        <div class="subscription__done"></div>
+        <form action="" class="main__form" method="get">
+            <input name="name" type="text" class="input__form" id="input__name" placeholder="nombre" required>
+            <input name="lastname" type="text" class="input__form" id="input__lastname" placeholder="apellido" required>
+            <input name="phone" type="text" class="input__form" id="input__phone" placeholder="teléfono" required>
+            <input name="email" type="email" class="input__form" id="input__email" placeholder="email">
+            <input type="submit" class="input__form btn-send" id="input__send" value="enviar">
+            <p class="subtitle" id="warnings"></p>
        </form>
        <h2 class="subtitle">También puedes seguirnos en nuestras redes sociales para más contenido.</h2>
        <div class="social__media">
@@ -32,7 +37,6 @@
        </div>
     </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
